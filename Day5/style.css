@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --green-primary:#B6E6D2;
+    --green-secondary:#E5F8F0;
+    --cream:#FFFCF5;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 4rem;
+    background-color: var(--cream);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--green-primary);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    gap: .5rem;
+}
+.col.withsub{
+    background: none;
+    padding: 0;
+    gap: 2rem;
+}
+.col.withsub .subcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+.col img{
+    width: 60%;
+    margin: auto;
+}
+.col .subcol{
+    position: relative;
+    flex: 1;
+    background-color: var(--green-secondary);
+}
+.col .btngrup button{
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--green-primary);
+    border: none;
+    border-radius: 1rem;
+}
+#sales{
+    background-color: var(--green-secondary);
+}
