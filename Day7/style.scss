@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --background-primary:#E6E2E2;
+    --background-secondary:#EFECEC;
+    --text-primary:#4F4F4F;
+    --text-secondary:#C8C8C8;
+    --white:#fff;
+}
+body{
+    font-family: "Tajawal", sans-serif;
+    background-color: var(--background-primary);
+    padding: 3rem;
+}
+.container{
+    background-color: var(--background-secondary);
+    border-radius: 1rem;
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    overflow: hidden;
+    color: var(--text-primary);
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--text-primary);
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 2rem;
+            li a{
+                color: var(--text-primary);
+                text-decoration: none;
+                border-radius: 1.5rem;
+                padding: .5rem 1rem;
+            }
+            li a.active,li:hover a{
+                background-color: var(--text-primary);
+                color: var(--background-primary);
+            }
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        .img-bg{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: -10rem;
+            margin-bottom: -5rem;
+            height: 120%;
+        }
+        .text{
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+        .item-wrap{
+            z-index: 10;
+            display: flex;
+            gap: 2rem;
+            width: 100%;
+            position: relative;
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--white);
+                padding: 1rem;
+                width: 18%;
+                border-radius: .5rem;
+                gap: .4rem;
+                img{
+                    width: 60%;
+                    height: 40%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                }
+                .item-text{
+                    font-size: 1.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .2rem;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                    }
+                }
+                button{
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: -20px;
+                    padding: .5rem 1rem;
+                    border: none;
+                    border-radius: 1rem;
+                    background-color: var(--text-primary);
+                    color: var(--background-primary);
+                }
+            }
+        }
+    }
+}
