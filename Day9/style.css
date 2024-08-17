@@ -1,0 +1,48 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+article h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero-banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.baronnews.com/wp-content/uploads/2021/01/anime-small-1000x667.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.table-content table {
+    border-collapse: collapse;
+    width: 80%;
+}
+.table-content table tbody tr{
+    height: 3rem;
+    text-align: center;
+}
+.table-content table tbody tr:nth-child(even){
+    background-color: aliceblue;
+}
+footer{
+    padding: 2rem;
+    text-align: center;
+}
